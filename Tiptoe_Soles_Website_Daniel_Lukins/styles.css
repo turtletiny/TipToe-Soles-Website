@@ -1,0 +1,361 @@
+:root {
+    --alabaster: hsla(77, 11%, 87%, 1);
+    --timberwolf: hsla(70, 12%, 81%, 1);
+    --ash-gray: hsla(98, 6%, 73%, 1);
+    --cadet-gray: hsla(180, 6%, 56%, 1);
+    --hookers-green: hsla(169, 10%, 25%, 1);
+    color-scheme: light dark;
+}
+
+body {
+    background-color: var(--timberwolf);
+    color: var(--hookers-green);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+a {
+    font-size: 150%;
+}
+
+a:link {
+    color: darkkhaki;
+}
+
+a:visited {
+    color: #f97ed0;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: chartreuse;
+}
+
+h1 {
+    color: var(--hookers-green);
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+.home-image {
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+
+.about-image {
+    width: 700px;
+    margin: auto;
+    display: block;
+}
+
+/* header for page */
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--alabaster);
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    max-width: 100px;
+    min-width: 30px;
+    padding: 10px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navigation a {
+    color: var(--hookers-green);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+.navigation a:hover {
+    color: #0f2924;
+}
+
+
+
+#search {
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+    max-width: 100%;
+}
+
+#search input {
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px 0px 0px 5px;
+    flex: 1;
+}
+
+#search button {
+    padding: 10px;
+    border: solid 1px;
+    background-color: var(--hookers-green);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* -------------- carousel ----------------- */
+.slide {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: var(--timberwolf);
+    background-size: cover;
+    background-position: center;
+}
+.slide h2 {
+    font-size: 3.5em;
+    text-shadow: 0px 0px 0px black;
+    /* color: white; */
+}
+.slide button {
+    padding: 10px;
+    background-color: var(--hookers-green);
+    min-width: 300px;
+    border: solid 1px var(--alabaster);
+    border-radius: 8px;
+    font-weight: 600;
+}
+.slide button:hover {
+    background-color: #1a3a33;     
+    border-color: #1a3a33;         
+    color: white;                  
+    cursor: pointer;              
+}
+
+.slide:nth-child(1) {
+    background-image: url("images/slides/balloon.jpg") ;
+    color: orange;
+    
+
+}
+
+.slide:nth-child(2) {
+    background-image: url("images/slides/christmasimage.jpg") ;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.slide:nth-child(3) {
+    background-image: url("images/slides/newimage.jpg") ;
+    color: rgb(0, 0, 0);
+
+
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+}
+
+.main-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--alabaster);
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+.footer-nav a, .social-nav a, .legal-nav a {
+    color: var(--hookers-green);
+    padding: 5px;
+    font-weight: 600;
+}
+.footer-nav a:hover, .social-nav a:hover, .legal-nav a:hover {
+    color: #1a3a33;
+}
+.social-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 120%;
+}
+.legal-nav {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+/* content */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+ .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+.card {
+    flex: 1;
+    background-color: var(--alabaster);
+    border: 1px solid var(--cadet-gray);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card button {
+    min-width: 100%;
+    padding: 12px;
+    border: 2px solid var(--hookers-green);
+    border-radius: 5px;
+    background-color: var(--hookers-green);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: #1a3a33;
+    border-color: #1a3a33;
+}
+.card h3 {
+    color: var(--hookers-green);
+    font-weight: 600;
+}
+.main-content {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
+}
+.banner2 {
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle,#feb47b,rgb(255, 208, 0),rgb(204, 151, 5) );
+    margin-top: 1em;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 0.5em;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.contact-form button {
+    min-width: auto;
+}
+.contact-details a {
+    color: var(--hookers-green);
+    font-size: medium;
+}
+
+/* About page styles */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    min-height: 60vh;
+    align-items: flex-start;
+}
+
+.about-container .card {
+    flex: 0.8;
+}
+
+.about-image-section {
+    flex: 1;
+}
+
+/* Contact page styles */
+.card-container.contact {
+    align-items: stretch;
+    min-height: 60vh;
+}
+
+.card-container.contact .card {
+    min-height: 450px;
+}
+
+.nav-button {
+    background-color: var(--cadet-gray); 
+    width: 44px;
+    height: 44px;
+    border: solid 2px var(--alabaster);  
+    border-radius: 5px;
+    display: none;                       
+    padding: 2px;                        
+}
+
+.nav-button img {
+    width: 30px;                         
+    height: auto;
+    display: block;
+    margin: auto;                        
+}
+
+.banner2 button {
+    padding: 12px;
+    border: 2px solid var(--hookers-green);
+    border-radius: 5px;
+    background-color: var(--hookers-green);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;              
+    min-width: unset;         
+    margin-top: 10px;         
+}
+.banner2 button:hover {
+    background-color: #1a3a33;
+    border-color: #1a3a33;
+    color: white;
+}
+
+

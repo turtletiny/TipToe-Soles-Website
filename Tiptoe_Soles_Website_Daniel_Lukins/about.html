@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us - Tiptoe Soles</title>
+    <link rel="icon" href="images/SiteIcon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <button class="nav-button" id="menu-button">
+            <img src="images/burger.svg" alt="menu icon">
+        </button>
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
+        </a>
+        <!-- category menu -->
+        <nav class="navigation" id="main">
+            <a href="products.html">Products</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <!-- search form -->
+        <form id="search" method="get" action="/formdata">
+            <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
+            <button type="submit">
+                <img src="images/search-icon.svg" alt="search button icon">
+            </button>
+        </form>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="sr-only">Shopping Cart</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="about-container">
+            <div class="card">
+                <div class="card-content">
+                    <h1>About Us</h1>
+                    <p>TipToe Soles is proudly Australian owned and operated, built on a passion for creating footwear that blends comfort, style, and affordability. Our mission is simple yet meaningful: to provide shoes that support everyday life, whether you’re walking through city streets, working long hours, or exploring the outdoors.
+
+We believe that comfortable footwear should never come at the expense of quality or price. That’s why we carefully design and source our products to ensure durability, support, and timeless appeal — all while keeping them accessible to customers across Australia and beyond.
+
+From humble beginnings, TipToe Soles has grown into a trusted name in footwear, serving individuals who value both practicality and fashion. Every pair we offer reflects our commitment to excellence, with designs that cater to diverse lifestyles and needs.
+
+Our vision extends globally, but our heart remains firmly rooted in Australia. By staying true to our values of comfort, affordability, and customer care, we continue to build lasting relationships with people who choose TipToe Soles as their go-to brand for everyday footwear.</p>
+                </div>
+            </div>
+            <div class="about-image-section">
+                <img class="about-image" src="images/globe.png" alt="Australia Photo">
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Policies</a>
+        </nav>
+        <nav class="social-nav">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+                <span class="sr-only">TikTok</span>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </nav>
+        <nav class="legal-nav">
+            <a href="#">Copyright</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

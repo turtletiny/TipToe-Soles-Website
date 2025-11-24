@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiptoe Soles</title>
+    <link rel="icon" href="images/SiteIcon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <button class="nav-button" id="menu-button">
+            <img src="images/burger.svg" alt="menu icon">
+        </button>
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
+        </a>
+        <!-- category menu -->
+        <nav class="navigation" id="main">
+            <a href="products.html">Products</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <!-- search form -->
+        <form id="search" method="get" action="/formdata">
+            <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
+            <button type="submit">
+                <img src="images/search-icon.svg" alt="search button icon">
+            </button>
+        </form>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="sr-only">Shopping Cart</span>
+            </a>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="slide">
+            <h2>Black Friday Sales</h2>
+            <button>Shop Discounted</button>
+        </div>
+        <div class="slide">
+            <h2>Christmas Sales</h2>
+            <button>Shop Christmas</button>
+        </div>
+        <div class="slide">
+            <h2>New Shoes Soon</h2>
+            <button>Learn more</button>
+        </div>
+        
+        </div>
+    </div>
+    <main class="main-content">
+        <div class="scrollbox">
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/shoes/shoeman.jpg" alt="mens shoes">
+                    <div class="card-content">
+                        <h3>Mens</h3>
+                        <button type="button">
+                            Shop Mens
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/shoes/shoewoman.jpg" alt="womens shoes">
+                    <div class="card-content">
+                        <h3>Womens</h3>
+                        <button type="button">
+                            Shop Womens
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/shoes/shoeuni.jpg" alt="unisex shoes">
+                    <div class="card-content">
+                        <h3>Unisex</h3>
+                        <button type="button">
+                            Shop Unisex
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner2">
+            <h2>Summer Sale</h2>
+            <button type="button">Shop Summer Sale</button>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Policies</a>
+        </nav>
+        <nav class="social-nav">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+                <span class="sr-only">TikTok</span>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </nav>
+        <nav class="legal-nav">
+            <a href="#">Copyright</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
